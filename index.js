@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, {
       "content-type": "text/html"
     });
-    res.end(`<h1>📆 Current Day and Time 📆</h1><p>${data}</p>`);
+    res.end(`<h1>Current Day and Time</h1><p>${data}</p>`);
     } catch (error) {
     console.log(error);
     res.writeHead(500, {
